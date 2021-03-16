@@ -64,7 +64,7 @@ The abstract representations can be found below:
 ### Data Cleaning
 
 <div style="text-align: justify">
-Before using the three datasets to train and evaluate the experimented models, we performed a <a href="https://tinyurl.com/y63qnwqg">transformation and cleaning process </a> on each of them to (i) make the data treatable with DL/shallow models, and (ii) avoid possible pitfalls that are common in studies of machine learning on code (e.g., duplicated functions due to forked projects). 
+Before using the three datasets to train and evaluate the experimented models, we performed a <a href="https://github.com/TheSoftwareDesignLab/Shallow_or_deep/tree/main/Scripts/data_wrangling">transformation and cleaning process </a> on each of them to (i) make the data treatable with DL/shallow models, and (ii) avoid possible pitfalls that are common in studies of machine learning on code (e.g., duplicated functions due to forked projects). 
 </div>
 
 <div style="text-align: justify">
@@ -74,5 +74,5 @@ By starting with five different datasets of function representations for each da
 ### Classifiers
 
 <div style="text-align: justify">
-Given the variables involved in our study, namely four approaches (i.e., GCP-AutoML, RF, CNN & RNN), five representations, three datasets, and two types of classification---binary and multiclass), we built a total of 120 different models. We publicly release the source code of the <a href="https://tinyurl.com/y63qnwqg">base models </a>.
+Given the variables involved in our study, namely four approaches (i.e., GCP-AutoML, RF, CNN & RNN), five representations, three datasets, and two types of classification---binary and multiclass), we built a total of 120 different models. We publicly release the source code of the <a href="https://github.com/reviewdoubleblind2/shallow_or_deep/tree/master/Scripts/training_tuning">base models </a> and how to  <a href="https://github.com/reviewdoubleblind2/shallow_or_deep/tree/master/Scripts/retrieving">retrieve </a> the results.
 </div>
