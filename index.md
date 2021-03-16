@@ -74,5 +74,5 @@ By starting with five different datasets of function representations for each da
 ### Classifiers
 
 <div style="text-align: justify">
-Given the variables involved in our study, namely four approaches (i.e., GCP-AutoML, RF, CNN & RNN), five representations, three datasets, and two types of classification---binary and multiclass), we built a total of 120 different models. We publicly release the source code of the <a href="https://github.com/reviewdoubleblind2/shallow_or_deep/tree/master/Scripts/training_tuning">base models </a> and how to  <a href="https://github.com/reviewdoubleblind2/shallow_or_deep/tree/master/Scripts/retrieving">retrieve </a> the results.
+Given the variables involved in our study, namely four approaches (i.e., GCP-AutoML, RF, CNN & RNN), five representations, three datasets, and two types of classification---binary and multiclass), we built a total of 120 different models. We publicly release the source code of the <a href="https://github.com/reviewdoubleblind2/shallow_or_deep/tree/master/Scripts/training_tuning">base models </a> and how to  <a href="https://github.com/reviewdoubleblind2/shallow_or_deep/tree/master/Scripts/retrieving">retrieve </a> the results after training and tunning.
 </div>
