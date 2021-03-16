@@ -28,7 +28,7 @@ Having that goal and context in consideration, our study addresses the following
 We answer this RQ in two main steps. First, we create binary classifiers able to discriminate between vulnerable and non-vulnerable functions, without reporting the specific type of vulnerability affecting the code. This scenario is relevant for practitioners/researchers who are only interested in identifying potentially vulnerable code for inspection/investigation. Second, we experiment the same models in the more challenging scenario of classifying functions as clean (i.e., do not affected by any vulnerability) or as affected by specific types of vulnerabilities.
 </div>
 
-### Data Collection and Labeling
+### Data Collection 
 
 We relied on three datasets composed by C/C++ source code functions and information about the vulnerabilities affecting them.
 
