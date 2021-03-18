@@ -30,6 +30,7 @@ Having that goal and context in consideration, our study addresses the following
 <div style="text-align: justify">
 We answer this RQ in two main steps. First, we create binary classifiers able to discriminate between vulnerable and non-vulnerable functions, without reporting the specific type of vulnerability affecting the code. This scenario is relevant for practitioners/researchers who are only interested in identifying potentially vulnerable code for inspection/investigation. Second, we experiment the same models in the more challenging scenario of classifying functions as clean (i.e., do not affected by any vulnerability) or as affected by specific types of vulnerabilities.
 </div>
+
 <br/>
 ### Data Collection 
 
@@ -50,6 +51,7 @@ We relied on three datasets composed by C/C++ source code functions and informat
 We are aware of the fact that commit messages might imprecisely identify bug-fixing commits and, as a consequence, vulnerability-fixing commits, two authors independently analyzed a statistically significant sample (95% confidence level +-5% confidence interval, for a total size of 384) of identified commits to check whether they were actually vulnerability fixes. After solving 45 cases of disagreement, they concluded that 90.3% of the identified vulnerability-fixing commits were <a href="https://tinyurl.com/y32m694m">true positives </a>.
 </div>
 
+<br/>
 ### Code Representation
 
 <div style="text-align: justify">
@@ -77,6 +79,7 @@ Before using the three datasets to train and evaluate the experimented models, w
 By starting with five different datasets of function representations for each dataset. We addressed conflicting representation (i.e., two samples with same code representation and different labels) and duplicates. In case of conflicting representations, all instances were removed. As for the duplicates, we removed all duplicates having the same raw source code representation and the same label (i.e., type of vulnerability affecting them, if any), keeping only the first occurrence. This means that it is possible to have in our datasets two snippets having the same abstract representation, but not the same raw source code. Such a design choice is justified by the fact that the translation from raw source code to abstract representation is part of the classification pipelines used in ML implementations, and it is performed after the removal of duplicates.
 </div>
 
+<br/>
 ### Classifiers
 
 <div style="text-align: justify">
