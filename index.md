@@ -32,7 +32,7 @@ We answer this RQ in two main steps. First, we create binary classifiers able to
 </div>
 
 <br/>
-### Data Collection 
+## Data Collection 
 
 We relied on three datasets composed by C/C++ source code functions and information about the vulnerabilities affecting them.
 
@@ -52,7 +52,7 @@ We are aware of the fact that commit messages might imprecisely identify bug-fix
 </div>
 
 <br/>
-### Code Representation
+## Code Representation
 
 <div style="text-align: justify">
 From each dataset we extracted two sets of tuples. The first one, in the form (function_code, is_vulnerable), aims at experimenting the models in the scenario in which we want to identify vulnerable functions, but we are not interested to the specific type of vulnerability. In the second, the tuples are instead in the form (function_code, vulnerability_type), to experiment the models in the scenario in which we want to classify the vulnerability type exhibited by a given function. We use the non_vulnerable label to identify functions not affected by any vulnerability. 
@@ -69,7 +69,8 @@ The abstract representations can be found below:
 3. [Russell et al. Dataset (R-DS) (Abstract representations)](https://tinyurl.com/y6kb597a)
 
 <br/>
-### Data Cleaning
+
+## Data Cleaning
 
 <div style="text-align: justify">
 Before using the three datasets to train and evaluate the experimented models, we performed a <a href="https://github.com/TheSoftwareDesignLab/Shallow_or_deep/tree/main/Scripts/data_wrangling">transformation and cleaning process </a> on each of them to (i) make the data treatable with DL/shallow models, and (ii) avoid possible pitfalls that are common in studies of machine learning on code (e.g., duplicated functions due to forked projects). 
@@ -80,7 +81,8 @@ By starting with five different datasets of function representations for each da
 </div>
 
 <br/>
-### Classifiers
+
+## Classifiers
 
 <div style="text-align: justify">
 Given the variables involved in our study, namely four approaches (i.e., GCP-AutoML, RF, CNN & RNN), five representations, three datasets, and two types of classification---binary and multiclass), we built a total of 120 different models. We publicly release the source code of the <a href="https://github.com/reviewdoubleblind2/shallow_or_deep/tree/master/Scripts/training_tuning">base models </a> and how to  <a href="https://github.com/reviewdoubleblind2/shallow_or_deep/tree/master/Scripts/retrieving">retrieve </a> the results after training and tunning.
