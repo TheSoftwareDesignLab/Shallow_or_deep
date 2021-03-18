@@ -6,7 +6,7 @@ In this paper, we partially fill this gap by presenting a large-scale empirical 
 </div>
 
 <br/>
-<i> <small> Along this Online appendix you will find links for the data and for the different (i.e., training and tunning models,  retrieving results) </small></i>
+<i> <small> Along this Online appendix you will find links for the data and for the different scripts that we used in the different steps of the process (i.e., training and tunning models,  retrieving results) </small></i>
 <br/>
 
 ## Empirical Study Design
