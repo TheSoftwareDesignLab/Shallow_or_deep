@@ -32,6 +32,7 @@ We answer this RQ in two main steps. First, we create binary classifiers able to
 </div>
 
 <br/>
+
 ## Data Collection 
 
 We relied on three datasets composed by C/C++ source code functions and information about the vulnerabilities affecting them.
