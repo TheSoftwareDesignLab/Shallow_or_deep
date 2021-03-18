@@ -1,0 +1,23 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header ol li {
+    border-right: 0px solid #e0e0e0;
+    float: none;
+    width: auto;
+    height: auto;
+}
+
+header h1 {
+    text-align: center;
+}
+
+section p, li {
+    text-align: justify;
+}
+
+footer p {
+    margin: 0;
+}
