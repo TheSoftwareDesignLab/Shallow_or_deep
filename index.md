@@ -33,7 +33,7 @@ We answer this RQ in two main steps. First, we create binary classifiers able to
 
 <br/>
 
-## Data Collection 
+## Data Collection
 
 We relied on three datasets composed by C/C++ source code functions and information about the vulnerabilities affecting them.
 
@@ -53,6 +53,7 @@ We are aware of the fact that commit messages might imprecisely identify bug-fix
 </div>
 
 <br/>
+
 ## Code Representation
 
 <div style="text-align: justify">
