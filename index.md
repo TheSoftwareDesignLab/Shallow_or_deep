@@ -4,6 +4,7 @@
 Deep learning (DL) techniques are on the rise in the software engineering research community. More and more approaches have been developed on top of DL models, also due to the unprecedented amount of software-related data that can be used to train these models. One of the recent applications of DL in the software engineering domain concerns the automatic detection of software vulnerabilities. While several DL models have been developed to approach this problem, there is still limited empirical evidence concerning their actual effectiveness especially when compared with shallow machine learning techniques.
 In this paper, we partially fill this gap by presenting a large-scale empirical study using three vulnerability datasets and five different source code representations (i.e., the format in which the code is provided to the classifiers to assess whether it is vulnerable or not) to compare the effectiveness of two widely used DL-based models and of one shallow machine learning model in (i) classifying code functions as vulnerable or non-vulnerable (i.e., binary classification), and (ii) classifying code functions based on the specific type of vulnerability they contain (or "clean", if no vulnerability is there).  As a baseline we include in our  study the AutoML utility provided by the Google Cloud Platform. Our results show that the experimented models are still far from ensuring reliable vulnerability detection, and that a shallow learning classifier represents a competitive baseline for the newest DL-based models.
 </div>
+<br/>
 
 ## Empirical Study Design
 
@@ -18,16 +19,18 @@ On top of the three experimented models, we also exploit as baseline for our exp
 II. The <strong><em>context</em></strong> of the study is represented by three datasets of C/C++ code reporting software vulnerabilities at the function granularity level, for a total of 1,841,323 functions, of which 390,558 are vulnerable ones. 
 </div>
 
+<br/>
+
 ## Research Question and Main Context
 
 Having that goal and context in consideration, our study addresses the following research question (RQ):
-
+<br/>
 ### What is the  effectiveness of different  combinations of classifiers and code representations to identify functions affected by software vulnerabilities?
 
 <div style="text-align: justify">
 We answer this RQ in two main steps. First, we create binary classifiers able to discriminate between vulnerable and non-vulnerable functions, without reporting the specific type of vulnerability affecting the code. This scenario is relevant for practitioners/researchers who are only interested in identifying potentially vulnerable code for inspection/investigation. Second, we experiment the same models in the more challenging scenario of classifying functions as clean (i.e., do not affected by any vulnerability) or as affected by specific types of vulnerabilities.
 </div>
-
+<br/>
 ### Data Collection 
 
 We relied on three datasets composed by C/C++ source code functions and information about the vulnerabilities affecting them.
@@ -37,7 +40,7 @@ We relied on three datasets composed by C/C++ source code functions and informat
 2. [STATE IV Juliet Test Suite Dataset (J-DS)](https://tinyurl.com/yy4pj6ol)
 
 3. [Russell et al. Dataset (R-DS)](https://tinyurl.com/yywc9nrs)
-
+<br/>
 #### Author validation
 
 <div style="text-align: justify">
@@ -60,7 +63,7 @@ The abstract representations can be found below:
 
 3. [Russell et al. Dataset (R-DS) (Abstract representations)](https://tinyurl.com/y6kb597a)
 
-
+<br/>
 ### Data Cleaning
 
 <div style="text-align: justify">
