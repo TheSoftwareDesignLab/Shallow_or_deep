@@ -4,6 +4,8 @@
 Deep learning (DL) techniques are on the rise in the software engineering research community. More and more approaches have been developed on top of DL models, also due to the unprecedented amount of software-related data that can be used to train these models. One of the recent applications of DL in the software engineering domain concerns the automatic detection of software vulnerabilities. While several DL models have been developed to approach this problem, there is still limited empirical evidence concerning their actual effectiveness especially when compared with shallow machine learning techniques.
 In this paper, we partially fill this gap by presenting a large-scale empirical study using three vulnerability datasets and five different source code representations (i.e., the format in which the code is provided to the classifiers to assess whether it is vulnerable or not) to compare the effectiveness of two widely used DL-based models and of one shallow machine learning model in (i) classifying code functions as vulnerable or non-vulnerable (i.e., binary classification), and (ii) classifying code functions based on the specific type of vulnerability they contain (or "clean", if no vulnerability is there).  As a baseline we include in our  study the AutoML utility provided by the Google Cloud Platform. Our results show that the experimented models are still far from ensuring reliable vulnerability detection, and that a shallow learning classifier represents a competitive baseline for the newest DL-based models.
 </div>
+
+<small> Along this Online appendix you will find links for the data and for the different (i.e., training and tunning models,  retrieving results ) </small>
 <br/>
 
 ## Empirical Study Design
